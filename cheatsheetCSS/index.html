@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cheatsheet CSS3</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="link__close"><i class="fa-solid fa-rectangle-xmark icone__close"></i></a>
+        <img src="../assets/images/logo-css.png" class="logo" alt="">
+        <div>
+            <h1 class="title__h1">CSS3</h1>
+            <p class="slogan">Les fondamentaux de CSS</p>
+        </div>
+    </header>
+    <main class="main">
+        <!-- <div class="main__back">
+            <a href="../index.html" class="link__back"><i class="fa-solid fa-arrow-left"></i> Retour</a>
+        </div> -->
+        <div class="main__presentation">
+            <h2 class="title__h2">Les principales propriétés</h2>
+            <p class="main__presentation__p">CSS, pour cascading style sheet ou feuille de style en cascade et le langage qui vous permet de mettre en forme votre contenu html et de le rendre un peu plus joli. En CSS, on attribue des propriétés à des selecteurs et ces propriétés sont déterminées par des valeurs. Voici les propriétés essentielles.</p>
+        </div>
+        <div class="main__block__links">
+            <h2 class="title__h2 title__link__utils">Liens utiles</h2>
+            <a href="https://www.zonecss.fr/liens/les-liens-utiles.html" class="link__utils" target="_blank">Zone CSS <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/CSS" class="link__utils link__utils__last" target="_blank">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3 class="title__h3">Background</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">background</span><span class="tag__description">couleur, image, origine, taille, répétition</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">background-color: couleur</span><span class="tag__description">couleur de fond</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">background-image: src (url)</span><span class="tag__description">image de fond</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">background-repeat: repeat/no-repeat</span><span class="tag__description">répétition ou non du fond</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">background-position: left/top/center ou valeurs</span><span class="tag__description">position de l'image</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Display and size</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">width: px/%</span></span>largeur</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">height: px/%</span><span class="tag__description">hauteur</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">min-width/max-width</span><span class="tag__description">largeur minimale/maximale</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">min-height/max-height</span><span class="tag__description">hauteur minimale/maximale</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">display:block/inline/inline-block/flex/grid/table</span><span class="tag__description">affichage de l'élément</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Border</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">border-color: color</span><span class="tag__description">couleur de la bordure</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">border-widht: px, %, em</span><span class="tag__description">épaisseur de la bordure
+                            </span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">border-style: solid, dashed, inset...</span><span class="tag__description">style de bordure
+                            </span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">border: 2px solid white</span><span class="tag__description">super propriété border (épaisseur / type / couleur)</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">border-top/right/bottom/left</span><span class="tag__description">selection d'un côté</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">border-radiux: valeur</span><span class="tag__description">arrondie des angles</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">box-shadow: px px px color</span><span class="tag__description">ombre de l'élément</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Fonts</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">font-family: 'family'</span></span>type de police</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">font-size: px/em/%</span><span class="tag__description">taille de police</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">font-style: normal/italic/oblique</span><span class="tag__description">style de la police</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">font-weight: normal/bold/light/200...</span><span class="tag__description">épaisseur de la police</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Margin, padding and position</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">margin: px/%</span><span class="tag__description">marge externe</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">padding: px/%</span><span class="tag__description">marge interne</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">
+                                <span>margin-top</span><br>
+                                <span>margin-bottom</span><br>
+                                <span>margin-left</span><br>
+                                <span>margin-right</span>
+                            </span>
+                            <span class="tag__description">
+                                <span>marge en haut</span><br>
+                                <span>marge en bas</span><br>
+                                <span>marge à gauche</span><br>
+                                <span>marge à droite</span>
+                            </span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">
+                                <span>padding-top</span><br>
+                                <span>padding-bottom</span><br>
+                                <span>padding-left</span><br>
+                                <span>padding-right</span>
+                            </span>
+                            <span class="tag__description">
+                                <span>marge en haut</span><br>
+                                <span>marge en bas</span><br>
+                                <span>marge à gauche</span><br>
+                                <span>marge à droite</span>
+                            </span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">margin: X X X X</span><span class="tag__description">marge haut/droite/bas/gauche</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">padding: X X X X</span><span class="tag__description">marge haut/droite/bas/gauche</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">position: absolute/relative/fixed/static</span><span class="tag__description">position de l'élément</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">overflow: visible/hidden/scroll/auto</span><span class="tag__description">rognage <br>du contenu</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Text</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">text-align: center/right/left/justify</span><span class="tag__description">alignement du texte</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">text-decoration: none/underline/overline</span><span class="tag__description">décoration du texte</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">text-shadow: color lenghtpx</span><span class="tag__description">ombre du texte</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">color: color</span><span class="tag__description">couleur du texte</span>
+                        </li>
+                        
+                        <li class="card__list__item">
+                            <span class="card__list__tag">word-spacing: px/%</span><span class="tag__description">espacement entre les mots</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">word-wrap: break-word</span><span class="tag__description">retour à la ligne forcé</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title__h3">Sélecteurs / Pseudo-class</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">.</span><span class="tag__description">séléction par class</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">#</span><span class="tag__description">séléction par id</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">:visited</span><span class="tag__description">lien visité</span>
+                        </li>
+                        
+                        <li class="card__list__item">
+                            <span class="card__list__tag">:hover</span><span class="tag__description">élément survolé</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">:link</span><span class="tag__description">lien non-visité</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">:nth-child (n)</span><span class="tag__description">enfant numéro n du parent</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">:first-child</span><span class="tag__description">premier enfant</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">:last-child</span><span class="tag__description">dernier enfant</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; 2024 - tous droits réservés - Grégory LACROIX</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cheatsheet BASH</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="link__close"><i class="fa-solid fa-rectangle-xmark icone__close"></i></a>
+        <img src="../assets/images/logo-bash.png" class="logo" alt="">
+        <div>
+            <h1 class="title__h1">BASH</h1>
+            <p class="slogan">Les commandes du terminal</p>
+        </div>
+    </header>
+    <main class="main">
+        <!-- <div class="main__back">
+            <a href="../index.html" class="link__back"><i class="fa-solid fa-arrow-left"></i> Retour</a>
+        </div> -->
+        <div class="main__presentation">
+            <h2 class="title__h2">Les commandes courantes du terminal</h2>
+            <p class="main__presentation__p">Cette page vise à présenter une liste non exhaustive de commandes connues et souvent utilisées.
+
+            </p>
+        </div>
+        <div class="main__block__links">
+            <h2 class="title__h2 title__link__utils">Liens utiles</h2>
+            <a href="https://doc.ubuntu-fr.org/tutoriel/console_commandes_de_base" class="link__utils" target="_blank">Les commandes console linux <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2></h2>
+                <h3 class="title__h3">
+                    Fichiers
+                </h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">mkdir mondossier</span><span class="tag__description">Crée un dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">rm -r mondossier</span><span class="tag__description">Supprime un dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">rm fichier</span><span class="tag__description">Supprime un fichier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">mv monfichier mondossier</span><span class="tag__description">Déplace un fichier dans un dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">cp monfichier mondossier</span><span class="tag__description">Copie un fichier dans un dossier</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title__h3">
+                    Navigation et visualisation
+                </h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">pwd</span><span class="tag__description">Affiche le chemin du dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">ls</span><span class="tag__description">Liste le contenu du dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">cd mondossier</span><span class="tag__description">Se déplace vers un dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">cd ..</span><span class="tag__description">Retourne au dossier parent</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">cd</span><span class="tag__description">Retourne à la racine</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">clear</span><span class="tag__description">Nettoie la fenêtre</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">cd ~</span><span class="tag__description">Le caractère "~" représente le répertoire HOME de l'utilisateur</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title__h3">
+                    Divers
+                </h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">sudo apt-get install</span><span class="tag__description">Installe un programme depuis internet</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">dpkg -i</span><span class="tag__description">Installe un programme depuis un fichier deb</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">sudo apt-get update</span><span class="tag__description">Effectue la mise à jour des dépôts</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">sudo apt-get upgrade</span><span class="tag__description">Effectue la mise à jour des paquets</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">find mondossier -name "monfichier"</span><span class="tag__description">Recherche un fichier dans un dossier</span>
+                        </li>
+
+                        <li class="card__list__item">
+                            <span class="card__list__tag">wget URL</span><span class="tag__description">téléchargement de fichiers depuis le web</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; 2024 - tous droits réservés - Grégory LACROIX</p>
+    </footer>
+</body>
+</html>

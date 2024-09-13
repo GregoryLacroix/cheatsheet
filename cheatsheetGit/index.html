@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cheatsheet GIT</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="link__close"><i class="fa-solid fa-rectangle-xmark icone__close"></i></a>
+        <img src="../assets/images/logo-git.png" class="logo" alt="">
+        <div>
+            <h1 class="title__h1">GIT</h1>
+            <p class="slogan">Les commandes de Git</p>
+        </div>
+    </header>
+    <main class="main">
+        <!-- <div class="main__back">
+            <a href="../index.html" class="link__back"><i class="fa-solid fa-arrow-left"></i> Retour</a>
+        </div> -->
+        <div class="main__presentation">
+            <h2 class="title__h2">Les principales commandes de GIT</h2>
+            <p class="main__presentation__p">Git est un outil de versioning puissant qui permet d'être sûr de ne jamais perdre ses travaux, plutôt une bonne chose non ? Il permet même de travailler sur des projets tests avant de les fusionner avec le projet final. Informations sur l'auteur, les modifications, création de branches... Git est presque sans limites pour peu que l'on connaisse ses commandes ! Voilà donc un petit récapitulatif des plus importantes pour travailler correctement.</p>
+        </div>
+        <div class="main__block__links">
+            <h2 class="title__h2 title__link__utils">Liens utiles</h2>
+            <a href="https://git-scm.com/" class="link__utils" target="_blank">Site officiel Git <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://doc.ubuntu-fr.org/git" class="link__utils" target="_blank">Doc Ubuntu <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://www.git-tower.com/blog/git-cheat-sheet/" class="link__utils link__utils__last" target="_blank">Doc Plus d'infos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="main__presentation">
+            <p class="main__presentation__p">Pour pourvoir envoyer ses fichiers sur son dépot Github, il faut tout d'abord se connecter à l'aide d'une clef SSH, ce petit <a href="https://codeur-pro.fr/acceder-en-ssh-a-vos-depots-git-distants-github/" class="link__tuto" target="_blank">tutoriel</a> vous indiquera la marche à suivre. Ensuite une fois la connection établie, il suffit de créer un nouveau dépot dans Github. Au moment de la création, les informations sur les modalités de connexion et notamment les commandes à rentrer dans la console vous seront indiquées. Voir deuxième section: git remote et git push -u origin main.</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3 class="title__h3">
+                    <span>COMMANDE</span>
+                    <span>ACTION</span>
+                </h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">git init</span><span class="tag__description">Ammorce le versioning dans le dossier</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git status</span><span class="tag__description">Affiche les fichiers modifiés</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git add</span><span class="tag__description">Ajoute les changements au prochain commit</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git commit</span><span class="tag__description">Crée le commit</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git commit -m "votre message"</span><span class="tag__description">Crée le commit avec un message d'information sur sa nature</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git diff</span><span class="tag__description">Affiche les changements commités</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git push origin main</span><span class="tag__description">Envoie le contenu de la branche master sur Github</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git pull origin main</span><span class="tag__description">Récupère le contenu de la branche master sur Github</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git branch votrebranche</span><span class="tag__description">Crée une branche</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git branch -av</span><span class="tag__description">Liste les branches existantes</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git checkout votrebranche</span><span class="tag__description">Change de branche</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git merge votrebranche</span><span class="tag__description">Fusionne la branche choisie avec la branche actuelle</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git reset commit</span><span class="tag__description">Restaure un commit sans effacer les changements des commits suivants</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git blame fichier</span><span class="tag__description">Montre les changements et leurs auteurs</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">git remote -v</span><span class="tag__description">Affiche la liste des dépôts configurés</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; 2024 - tous droits réservés - Grégory LACROIX</p>
+    </footer>
+</body>
+</html>

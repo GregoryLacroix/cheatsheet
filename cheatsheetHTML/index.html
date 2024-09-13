@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cheatsheet HTML</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="link__close"><i class="fa-solid fa-rectangle-xmark icone__close"></i></a>
+        <img src="../assets/images/logo-html.png" class="logo" alt="">
+        <div>
+            <h1 class="title__h1">HTML5</h1>
+            <p class="slogan">Un petit document qui récapitule les fondamentaux</p>
+        </div>
+    </header>
+    <main class="main">
+        <!-- <div class="main__back">
+            <a href="../index.html" class="link__back"><i class="fa-solid fa-arrow-left"></i> Retour</a>
+        </div> -->
+        <div class="main__presentation">
+            <h2 class="title__h2">Les principales balises</h2>
+            <p class="main__presentation__p">Les balises sont la base de tout document html et changent régulièrement au fil des évolutions du langage. Avec html5 de nouvelles balises, plus pratiques et mieux adaptées à nos besoins sont apparues. Les balises en html sont nombreuses et il serait bien compliqué de toutes les retenir mais ce petit document récapitule les balises les plus utiles à l'heure actuelle. En espérant qu'il vous fasse gagner du temps !</p>
+        </div>
+        <div class="main__block__links">
+            <h2 class="title__h2 title__link__utils">Liens utiles</h2>
+            <a href="https://www.w3.org/" class="link__utils" target="_blank">W3C <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://validator.w3.org/" class="link__utils" target="_blank">Validateur HTML <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="link__utils link__utils__last" target="_blank">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3 class="title__h3">Informations primaires</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">&lt;!DOCTYPE html&gt;</span><span class="tag__description">nature du document</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;html&gt;</span><span class="tag__description">document html</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;head&gt;</span><span class="tag__description">informations sur la page</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;title&gt;</span><span class="tag__description">titre de la page</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;meta&gt;</span><span class="tag__description">meta données</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;body&gt;</span><span class="tag__description">corps du document</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Structure</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">&lt;header&gt;</span></span>entête</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;nav&gt;</span><span class="tag__description">navigation</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;main&gt;</span><span class="tag__description">contenu majoritaire du &lt;body&gt;</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;section&gt;</span><span class="tag__description">groupe de contenu thématique</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;aside&gt;</span><span class="tag__description">section latérale</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;footer&gt;</span><span class="tag__description">pied de page</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;figure&gt;</span><span class="tag__description">contenu autonome</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;figure&gt;</span><span class="tag__description">contenu autonome</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;figcaption&gt;</span><span class="tag__description">légende de l'élément parent</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;div&gt;</span><span class="tag__description">élément bloc</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Texte</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">&lt;h1, h2, h3...h6&gt;</span><span class="tag__description">titres</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;p&gt;</span><span class="tag__description">paragraphe</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;br /&gt;</span><span class="tag__description">saut de ligne</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;span&gt;</span><span class="tag__description">section de ligne</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;em&gt;</span><span class="tag__description">accentuation</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;strong&gt;</span><span class="tag__description">accentuation forte</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;b&gt;</span><span class="tag__description">gras</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;i&gt;</span><span class="tag__description">italique</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Images et liens</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">&lt;img /&gt;</span></span>image</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;img src=""&gt;</span><span class="tag__description">source de l'image</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;img alt=""&gt;</span><span class="tag__description">texte alternatif</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;a&gt;</span><span class="tag__description">lien</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;a href=""&gt;</span><span class="tag__description">URL de redirection</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;a href="mailto:"&gt;</span><span class="tag__description">lien d'envoie de mail</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;a href="tel:"&gt;</span><span class="tag__description">lien d'envoie d'appel téléphonique</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Liste et tableaux</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">&lt;ul&gt;</span><span class="tag__description">liste simple</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;ol&gt;</span><span class="tag__description">liste ordonnée</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;li&gt;</span><span class="tag__description">élément de liste</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;table&gt;</span><span class="tag__description">tableau</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;thead&gt;</span><span class="tag__description">entête du tableau</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;tbody&gt;</span><span class="tag__description">corps de tableau</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;tfoot&gt;</span><span class="tag__description">pied de tableau</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;tr&gt;</span><span class="tag__description">ligne du tableau</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;td&gt;</span><span class="tag__description">cellule du tableau</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;th&gt;</span><span class="tag__description">cellule header tableau</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title__h3">Formulaires</h3>
+                <div class="card__content">
+                    <ul class="card__list">
+                        <li class="card__list__item">
+                        <span class="card__list__tag">&lt;form&gt;</span><span class="tag__description">formulaire</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;fieldset&gt;</span><span class="tag__description">section de formulaire</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;legend&gt;</span><span class="tag__description">légende</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;label&gt;</span><span class="tag__description">légende d'élément</span>
+                        </li>
+                        
+                        <li class="card__list__item">
+                            <span class="card__list__tag">&lt;input&gt;</span><span class="tag__description">champ</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;select&gt;</span><span class="tag__description">sélection</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;option&gt;</span><span class="tag__description">option de sélection</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;textarea&gt;</span><span class="tag__description">large zone de texte</span>
+                        </li>
+                        <li class="card__list__item">
+                            <span class="card__list__tag card__last__tag">&lt;button&gt;</span><span class="tag__description">bouton</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; 2024 - tous droits réservés - Grégory LACROIX</p>
+    </footer>
+</body>
+</html>
